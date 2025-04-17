@@ -1,6 +1,12 @@
 # JAX-PI
 
-This repository is a comprehensive implementation of physics-informed neural networks (PINNs), seamlessly integrating several advanced network architectures, training algorithms from these papers 
+This repository is an adaptation of the [JAX-PI repository from Predictive Intelligence Lab](https://github.com/PredictiveIntelligenceLab/jaxpi). It offers a comprehensive implementation of physics-informed neural networks (PINNs), seamlessly integrating several advanced network architectures, and training algorithms from [An Expert's Guide to Training Physics-informed Neural Networks
+](https://arxiv.org/abs/2308.08468) and the papers listed below.
+
+## Demo 
+A demonstration notebook for running the code on Google Colab is available [here](https://colab.research.google.com/drive/1a33Zx5J9NJ3mn8uNzxFKQq_m0DLjST9Q?usp=sharing). The next sections will provide a more thorough description of using the repo. 
+
+## Papers
 
 - [Gradient Alignment in Physics-informed Neural Networks: A Second-Order Optimization Perspective](https://arxiv.org/abs/2502.00604)
 - [Understanding and Mitigating Gradient Flow Pathologies in Physics-Informed Neural Networks](https://epubs.siam.org/doi/10.1137/20M1318043)
