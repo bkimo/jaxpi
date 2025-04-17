@@ -4,7 +4,7 @@ This repository is an adaptation of the [JAX-PI repository from Predictive Intel
 ](https://arxiv.org/abs/2308.08468) and the papers listed below.
 
 ## Demo 
-A demonstration notebook for running the code on Google Colab is available [here](https://colab.research.google.com/drive/1a33Zx5J9NJ3mn8uNzxFKQq_m0DLjST9Q?usp=sharing). The next sections will provide a more thorough description of using the repo. 
+[felixagren97](https://github.com/felixagren97) created a demonstration notebook for running the code on Google Colab, which is available [here](https://colab.research.google.com/drive/1a33Zx5J9NJ3mn8uNzxFKQq_m0DLjST9Q?usp=sharing). 
 
 ## Papers
 
