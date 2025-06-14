@@ -49,14 +49,14 @@ def restore_checkpoint(state, workdir, step=None):
     # if so, reduce to a single device sharding
 
     if isinstance(
-        jax.tree_map(lambda x: jnp.array(x).sharding, jax.tree_leaves(state.params))[0],
+        jax.tree.map(lambda x: jnp.array(x).sharding, jax.tree_leaves(state.params))[0],
         jax.sharding.PmapSharding,
     ):
-        state = jax.tree_map(lambda x: x[0], state)
+        state = jax.tree.map(lambda x: x[0], state)
 
     # ensuring that we're in a single device setting
     assert isinstance(
-        jax.tree_map(lambda x: jnp.array(x).sharding, jax.tree_leaves(state.params))[0],
+        jax.tree.map(lambda x: jnp.array(x).sharding, jax.tree_leaves(state.params))[0],
         jax.sharding.SingleDeviceSharding,
     )
 
