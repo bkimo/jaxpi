@@ -107,7 +107,7 @@ class ResSampler(BaseSampler):
 
 def train_one_window(config, workdir, model, samplers, idx):
     # Initialize evaluator
-    evaluator = models.NavierStokesEvaluator(config, model)
+    evaluator = models.LerayAlpha2DEvaluator(config, model)
 
     # Initialize logger
     logger = Logger()
