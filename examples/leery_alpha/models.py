@@ -462,7 +462,7 @@ class LerayAlpha2D(ForwardBVP):
 
         return C_D, C_L, p_diff
 
-class LerayAlphaEvaluator(BaseEvaluator):
+class LerayAlpha2DEvaluator(BaseEvaluator):
 #class NavierStokesEvaluator(BaseEvaluator):
     def __init__(self, config, model):
         super().__init__(config, model)
