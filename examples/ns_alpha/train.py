@@ -282,7 +282,7 @@ def train_and_evaluate(config: ml_collections.ConfigDict, workdir: str):
         }
 
         # Initialize model
-        model = models.LerayAlpha2D(config, inflow_fn, temporal_dom, coords, Re, alpha)
+        model = models.LerayAlpha2D(config, inflow_fn, temporal_dom, coords, Re, alpha=config.alpha)
 
         # Train model for the current time window
         model = train_one_window(config, workdir, model, samplers, idx)
